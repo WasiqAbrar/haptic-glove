@@ -45,7 +45,6 @@ IMU Sensor → Arduino → Unity (3D hand rotates) → Arduino → Vibration Mot
 |---|---|---|
 | Arduino Uno | 1 | Main microcontroller |
 | 10 DOF IMU Module (LSM303 + ITG3200 + HMC5883L) | 1 | Reads orientation data |
-| HC-SR04 Ultrasonic Sensor | 1 | Originally used for distance detection (now unused) |
 | N-MOSFET Transistors | 5 | Switch motors on/off |
 | Vibration Motors (coin type) | 5 | Haptic feedback on fingers |
 | Breadboard | 1 | Prototyping |
