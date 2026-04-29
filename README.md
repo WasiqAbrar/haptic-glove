@@ -1,4 +1,4 @@
-# Haptic Glove
+# haptic-glove
 
 A low-cost haptic feedback glove prototype that tracks hand orientation using a 10 DOF IMU sensor and provides vibration feedback through motors when interacting with virtual 3D objects in Unity.
 
@@ -21,7 +21,7 @@ A low-cost haptic feedback glove prototype that tracks hand orientation using a 
 
 ## Overview
 
-The Haptic Glove connects physical hand movement to a virtual 3D environment. An IMU sensor mounted on the hand reads orientation data which is sent to Unity over Serial communication. A 3D hand model in Unity mirrors the physical movement in real time. When the virtual hand interacts with a 3D object, Unity sends a command back to the Arduino which triggers vibration motors on the glove giving physical tactile feedback.
+The Haptic Glove connects physical hand movement to a virtual 3D environment. An IMU sensor mounted on the hand reads orientation data, which is sent to Unity over Serial communication. A 3D hand model in Unity mirrors the physical movement in real time. When the virtual hand interacts with a 3D object, Unity sends a command back to the Arduino, which triggers vibration motors on the glove, giving physical tactile feedback.
 
 **Data flow:**
 ```
@@ -116,13 +116,13 @@ Motor positive terminals connect to 5V rail.
 
 1. Open the `unity/` folder as a Unity project in Unity Hub
 2. Select `3D (Built-In Render Pipeline)` template
-3. Go to `Edit` → `Project Settings` → `Player` → `Other Settings`
+3. Go to `Edit` → `Project Settings` → `Player` → `Other Settings.`
 4. Set `Api Compatibility Level` to `.NET Framework`
 5. Open `IMUReader.cs` and confirm the port name matches your Arduino COM port:
    ```csharp
    string portName = "COM5"; // change this if needed
    ```
-6. Close Arduino IDE completely before pressing Play in Unity
+6. Close the Arduino IDE completely before pressing Play in Unity
 7. Press Play — the hand model will respond to IMU movement
 
 ---
