@@ -178,7 +178,6 @@ haptic-glove/
 | Hand movement freezes during IMU motion | I2C connection drops on breadboard during physical movement | Partially fixed using Wire.setWireTimeout() |
 | Circular hand movement | IMU mounted upside down causing axis confusion in complementary filter | Partially fixed using pure accelerometer angles |
 | Movement lag | Serial baud rate at 9600 limits updates to 20 per second | Can be fixed by changing baud rate to 115200 |
-| Wave gesture not demonstrated | Hand model geometry misaligned with Unity coordinate system | Needs correct hand model orientation |
 
 ---
 
